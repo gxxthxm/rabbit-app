@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rabbit</title>
+  <meta name="description" content="Rabbit is a clickable iOS app prototype for buying inspected, pre-loved condos at fair prices.">
+  <meta name="theme-color" content="#F3F3F7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Rabbit">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="stage">
+    <aside class="side" aria-label="About this prototype">
+      <div class="side-brand"><img src="assets/icon.svg" alt="" width="56" height="56"><span class="wordmark">rabbit</span></div>
+      <h1>Pre-loved condos at fair prices.</h1>
+      <p>A clickable iOS prototype for first-time buyers. Search, save, book tours, make offers and follow them all the way to closing.</p>
+      <div>
+        <p class="side-label">Jump to a screen</p>
+        <nav class="jump" aria-label="Screens">
+          <a href="#/splash">Splash</a>
+          <a href="#/welcome">Welcome</a>
+          <a href="#/onboarding">Onboarding</a>
+          <a href="#/home">For You</a>
+          <a href="#/browse">Browse</a>
+          <a href="#/search">Search</a>
+          <a href="#/listing/juniper-1204">Listing</a>
+          <a href="#/tour/juniper-1204">Book a tour</a>
+          <a href="#/offer/juniper-1204">Make an offer</a>
+          <a href="#/checkout/juniper-1204">Review &amp; pay</a>
+          <a href="#/offers">Offer tracker</a>
+          <a href="#/saved">Saved</a>
+          <a href="#/chat/juniper-1204">Chat</a>
+          <a href="#/account">Account</a>
+        </nav>
+      </div>
+      <small>On a phone, open this page and choose Add to Home Screen to run Rabbit full screen. Everything you do is saved in this browser only.</small>
+      <button class="btn ghost sm" data-action="resetDemo">Reset demo data</button>
+    </aside>
+
+    <div class="device">
+      <div class="screen" id="screen">
+        <div class="island" aria-hidden="true"></div>
+        <main id="view" tabindex="-1"></main>
+        <div class="bar" id="bar" hidden></div>
+        <nav class="tabbar" id="tabbar" aria-label="Main" hidden></nav>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
